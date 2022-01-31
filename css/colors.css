@@ -1,0 +1,18 @@
+:root {
+
+  --color-gray-1: #303030;
+  --color-gray-2: #2b2b2b;
+  --color-gray-3: #333333;
+  --color-gray-4: #414141;
+  --color-gray-5: #707070;
+
+  --color-black-1: rgba(0, 0, 0, 0.8);
+  --color-black-2: rgba(0, 0, 0, 0.5);
+
+  --color-white-1: #eee;
+  --color-white-2: #eeeeeebf;
+
+  --color-purple: #8800ff;
+
+  --color-lightblue: #0099e0;
+}

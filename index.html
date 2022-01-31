@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/index.css" />
+
+  <title>Weather App</title>
+</head>
+<body>
+
+  <div class="layout__container" id="layout-container">
+
+    <div class="container__top">
+
+      <h1 class="container__top--title">Weather app</h1>
+
+      <div class="top__subtitle">
+        
+        <label class="top__subtitle--label" for="locationInput">Enter a city</label>
+        
+        <div class="subtitle__search">
+
+          <input type="search" class="subtitle__search--input" name="locationInput" id="locationInput" />
+          
+          <svg xmlns="http://www.w3.org/2000/svg" id="searchIcon" class="subtitle__search--search icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+
+        </div>
+
+        <p class="top__subtitle--text-wrong" id="error-message">Error! Please verify the city name.</p>
+      
+      </div>
+      
+    </div>
+
+    <div class="container__cards" id="cards-container">
+    </div>
+
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
