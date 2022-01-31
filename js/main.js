@@ -12,7 +12,7 @@ import {
   addWrongInputEffect, removeWrongInputEffect,
   getForecastFromAPI, removeAllChildNodes, 
   saveWeatherInLocalStorage, getWeatherFromLocalStorage, 
-  createCards
+  createCards, isInvalidInputLength
 } from './func_utils.js';
 
 // ============ EVENTS ============ //
@@ -20,7 +20,7 @@ btnSearch.addEventListener('click', debounce(async () => {
 
   let userInput = userLocationInput.value.trim();
 
-  if (userInput.length === 0) {
+  if (isInvalidInputLength(userInput)) {
     addWrongInputEffect();
     return;
   }

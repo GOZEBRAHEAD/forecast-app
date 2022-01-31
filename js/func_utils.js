@@ -47,3 +47,5 @@ export const createCards = (weather) => {
 export const saveWeatherInLocalStorage = (weather) => localStorage.setItem(LOCAL_STORAGE_NAME, JSON.stringify(weather));
 
 export const getWeatherFromLocalStorage = () => JSON.parse(localStorage.getItem(LOCAL_STORAGE_NAME));
+
+export const isInvalidInputLength = (userInput) => userInput.length === 0 || userInput.length > 20;
